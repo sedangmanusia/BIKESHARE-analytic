@@ -18,7 +18,7 @@ end_date = st.sidebar.date_input("End date", value=date(2012, 12, 31))
 # Load dataset (Pastikan file csv tersedia)
 @st.cache_data
 def load_data():
-    return pd.read_csv('hour.csv')
+    return pd.read_csv('main.csv')
 
 hour_df = load_data()
 
